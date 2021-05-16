@@ -1,0 +1,4 @@
+[config]
+coins = ["algorand", "bitcoin", "ethereum", "monero", "nano"]
+currencies = ["usd", "mxn", "eth", "btc"]
+poll_interval = 30
