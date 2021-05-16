@@ -1,7 +1,9 @@
 import { expect } from 'chai';
 import nock from 'nock';
 
-import priceService, { GetPricesSimpleRequest } from '../../src/services/priceService';
+import priceService, {
+  GetPricesSimpleRequest,
+} from '../../src/services/priceService';
 
 import { setCoinGeckoBtcUsdNock } from './mocks/coinGeckoBtcUsdNock';
 

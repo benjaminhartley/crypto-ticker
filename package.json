@@ -8,8 +8,8 @@
     "clean": "rimraf dist coverage .nyc_output",
     "compile": "tsc",
     "dev": "ts-node src/index.ts",
-    "lint": "eslint --ext .ts src/**",
-    "lint:fix": "eslint src/** --fix --ext .ts",
+    "lint": "eslint --ext .ts src/** test/**",
+    "lint:fix": "eslint src/** test/** --fix --ext .ts",
     "start": "npm run build && node dist/index.js",
     "test": "nyc mocha"
   },

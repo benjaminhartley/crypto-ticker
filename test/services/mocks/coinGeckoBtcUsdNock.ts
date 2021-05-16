@@ -1,10 +1,10 @@
 import nock from 'nock';
 
 export const setCoinGeckoBtcUsdNock = () => {
-  nock('https://api.coingecko.com:443', {"encodedQueryParams":true})
+  nock('https://api.coingecko.com:443', { encodedQueryParams: true })
     .get('/api/v3/simple/price')
-    .query({"ids":"bitcoin","vs_currencies":"usd"})
-    .reply(200, {"bitcoin":{"usd":48082}}, [
+    .query({ ids: 'bitcoin', vs_currencies: 'usd' })
+    .reply(200, { bitcoin: { usd: 48082 } }, [
       'Date',
       'Sun, 16 May 2021 02:28:21 GMT',
       'Content-Type',
@@ -50,6 +50,6 @@ export const setCoinGeckoBtcUsdNock = () => {
       'CF-RAY',
       '65012c100ec00d1a-ATL',
       'alt-svc',
-      'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400'
+      'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400',
     ]);
 };
